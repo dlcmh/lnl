@@ -1,0 +1,67 @@
+---
+title: Organisation and management
+---
+
+[[Organisational structure]] refers to the [[levels of management]] and [[division of responsibilities]] within an organisation.
+
+---
+
+Organisational chart refers to a diagram that outlines the internal management structure.
+
+---
+
+Hierarchy refers to the levels of management in any organisation, from the highest to the lowest.
+
+A level of hierarchy refers to managers/supervisors/other employees who are given a similar level of responsibility in an organisation.
+
+---
+
+Chain of command is the structure in an organisation which allows instructions to be passed down from senior management to lower levels of management.
+
+---
+
+The span of control is the number of subordinates working directly under a manager.
+
+---
+
+Directors are senior managers who lead a particular department or division of a business.
+
+---
+
+Line managers have direct responsibility for people below them in the hierarchy of an organisation.
+
+---
+
+Supervisors are junior managers who have direct control over the employees below them in the organisational structure.
+
+---
+
+Staff managers are specialists who provide support, information and assistance to line managers.
+
+---
+
+Delegation means giving a subordinate the authority to perform particular tasks.
+
+---
+
+Leadership styles are the different approaches to dealing with people and making decisions when in a position of authority – autocratic, democratic or laissez-faire.
+
+---
+
+Autocratic leadership is where the manager expects to be in charge of the business and to have their orders followed.
+
+Democratic leadership gets other employees involved in the decision-making process.
+
+---
+
+Laissez-faire leadership makes the broad objectives of the business known to employees, but then they are left to make their own decisions and organise their own work.
+
+---
+
+A trade union is a group of employees who have joined together to ensure their interests are protected.
+
+---
+
+A closed shop is when all employees must be a member of the same trade union.
+
+---

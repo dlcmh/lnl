@@ -10,7 +10,7 @@ export function SidebarCharacterCount() {
 
   return (
     <Menu mode="inline" theme="dark">
-      <Menu.Item key="1" icon={<UserOutlined />} style={{ color: 'red' }}>
+      <Menu.Item key="1" icon={<UserOutlined />} style={{ color: 'yellow' }}>
         {count || 0}
       </Menu.Item>
     </Menu>

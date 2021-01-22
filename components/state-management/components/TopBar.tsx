@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 
 export const TopBar = () => {
   const router = useRouter();
-  console.log(router.pathname);
 
   return (
     <Layout.Header>
@@ -23,6 +22,9 @@ export const TopBar = () => {
         selectedKeys={[router.pathname.split('/').slice(-1)[0]]}
         theme="dark"
       >
+        <Menu.Item key="home">
+          <Link href="/">Home</Link>
+        </Menu.Item>
         <Menu.Item key="jotai">
           <Link href="/state-management/jotai">Jotai</Link>
         </Menu.Item>

@@ -34,10 +34,17 @@ export default function Home() {
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
-          <Link href="/lnl/jotai">
+          <Link href="/state-management/jotai">
             <a className={styles.card}>
               <h3>Jotai &rarr;</h3>
-              <p>LnL January 22nd 2021</p>
+              <p>LnL January 22nd 2021 - State Management</p>
+            </a>
+          </Link>
+
+          <Link href="/state-management/recoil">
+            <a className={styles.card}>
+              <h3>Recoil &rarr;</h3>
+              <p>LnL January 22nd 2021 - State Management</p>
             </a>
           </Link>
         </div>

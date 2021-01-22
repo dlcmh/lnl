@@ -1,14 +1,14 @@
-import { Jotai } from 'components/lnl/jotai/Jotai';
+import { Recoil } from 'components/state-management/recoil/Recoil';
 import Head from 'next/head';
 
 export default function index() {
   return (
     <>
       <Head>
-        <title>Jotai</title>
+        <title>Recoil</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Jotai />
+      <Recoil />
     </>
   );
 }

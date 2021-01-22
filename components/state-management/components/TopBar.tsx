@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Layout, Menu } from 'antd';
 import { useRouter } from 'next/router';
 
@@ -22,8 +23,12 @@ export const TopBar = () => {
         selectedKeys={[router.pathname.split('/').slice(-1)[0]]}
         theme="dark"
       >
-        <Menu.Item key="jotai">Jotai</Menu.Item>
-        <Menu.Item key="recoil">Recoil</Menu.Item>
+        <Menu.Item key="jotai">
+          <Link href="/state-management/jotai">Jotai</Link>
+        </Menu.Item>
+        <Menu.Item key="recoil">
+          <Link href="/state-management/recoil">Recoil</Link>
+        </Menu.Item>
       </Menu>
     </Layout.Header>
   );

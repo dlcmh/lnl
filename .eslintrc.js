@@ -58,6 +58,7 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/no-array-index-key': 'off',
     'react/no-danger': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',

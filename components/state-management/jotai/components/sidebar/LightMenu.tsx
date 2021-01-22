@@ -9,7 +9,6 @@ export function LightMenu() {
   return (
     <Menu mode="inline">
       {text.split('').filter((char) => !!char.trim()).map((char, idx) => (
-      // eslint-disable-next-line react/no-array-index-key
         <Menu.Item key={(idx + 100) * 10} icon={<UserOutlined />}>
           {char}
         </Menu.Item>

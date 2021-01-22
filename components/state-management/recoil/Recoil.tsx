@@ -1,6 +1,6 @@
 import { Layout, Typography } from 'antd';
 import { Footer } from 'components/components/Footer';
-import { Provider } from 'jotai';
+import { RecoilRoot } from 'recoil';
 import { TopBar } from '../components/TopBar';
 import { CharacterCounter } from './components/mainContent/CharacterCounter';
 import { LightMenu } from './components/sidebar/LightMenu';
@@ -9,7 +9,7 @@ import { Sider } from './components/sidebar/Sider';
 
 export function Recoil() {
   return (
-    <Provider>
+    <RecoilRoot>
       <Layout>
         <TopBar />
         <Layout>
@@ -28,6 +28,6 @@ export function Recoil() {
           </Layout>
         </Layout>
       </Layout>
-    </Provider>
+    </RecoilRoot>
   );
 }

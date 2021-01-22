@@ -1,10 +1,10 @@
-import { useAtom } from 'jotai';
-import { charCountState } from '../../utils/charCountState';
+import { useRecoilValue } from 'recoil';
 import { textAtom } from '../../atoms/textAtom';
+import { characterCount } from '../../utils/characterCount';
 
 export function CharacterCount() {
-  const [text] = useAtom(textAtom);
-  const count = charCountState(text);
+  const text = useRecoilValue(textAtom);
+  const count = characterCount(text);
 
   return (
     <>

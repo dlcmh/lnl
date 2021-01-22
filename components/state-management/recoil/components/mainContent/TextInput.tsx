@@ -1,8 +1,8 @@
-import { useAtom } from 'jotai';
+import { useRecoilState } from 'recoil';
 import { textAtom } from '../../atoms/textAtom';
 
 export function TextInput() {
-  const [text, setText] = useAtom(textAtom);
+  const [text, setText] = useRecoilState(textAtom);
 
   const onChange = (event) => {
     setText(event.target.value);

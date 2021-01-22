@@ -1,10 +1,10 @@
 import { UserOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import { useAtom } from 'jotai';
+import { useRecoilValue } from 'recoil';
 import { textAtom } from '../../atoms/textAtom';
 
 export function LightMenu() {
-  const [text] = useAtom(textAtom);
+  const text = useRecoilValue(textAtom);
 
   return (
     <Menu mode="inline">

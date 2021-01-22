@@ -1,12 +1,12 @@
 import { UserOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import { useAtom } from 'jotai';
+import { useRecoilValue } from 'recoil';
 import { textAtom } from '../../atoms/textAtom';
-import { charCountState } from '../../utils/charCountState';
+import { characterCount } from '../../utils/characterCount';
 
 export function SidebarCharacterCount() {
-  const [text] = useAtom(textAtom);
-  const count = charCountState(text);
+  const text = useRecoilValue(textAtom);
+  const count = characterCount(text);
 
   return (
     <Menu mode="inline" theme="dark">

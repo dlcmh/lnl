@@ -1,3 +1,3 @@
 # Suria Labs fun stuff
 
-[2021-01-22 - Jotai](https://lnl.dakerr.com/lnl/jotai)
+2021-01-22 - [React state management with Jotai & Recoil](https://github.com/dlcmh/lnl/tree/main/docs/state-management)

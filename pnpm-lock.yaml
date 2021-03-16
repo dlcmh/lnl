@@ -2,12 +2,14 @@ dependencies:
   '@ant-design/icons': 4.5.0_react-dom@17.0.1+react@17.0.1
   antd: 4.14.0_react-dom@17.0.1+react@17.0.1
   jotai: 0.15.3_react@17.0.1
+  katex: 0.13.0
   next: 10.0.9_5347ba9dae72bc17e95cc7756ff465f1
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   recoil: 0.1.3_react-dom@17.0.1+react@17.0.1
-  swr: 0.5.3_react@17.0.1
+  zustand: 3.3.3_react@17.0.1
 devDependencies:
+  '@types/katex': 0.11.0
   '@types/node': 14.14.35
   '@types/react': 17.0.3
   '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
@@ -226,6 +228,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
+  /@types/katex/0.11.0:
+    dev: true
+    resolution:
+      integrity: sha512-27BfE8zASRLYfSBNMk5/+KIjr2CBBrH0i5lhsO04fca4TGirIIMay73v3zNkzqmsaeIa/Mi5kejWDcxPLAmkvA==
   /@types/node/14.14.35:
     dev: true
     resolution:
@@ -816,6 +822,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
+  /commander/6.2.1:
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
   /commondir/1.0.1:
     dev: false
     resolution:
@@ -1948,6 +1960,13 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-EIsmt3O3ljsU6sot/J4E1zDRxfBNrhjyf/OKjlydwgEimQuznlM4Wv7U+ueONJMyEn1WRE0K8dhi3dVAXYT24Q==
+  /katex/0.13.0:
+    dependencies:
+      commander: 6.2.1
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-6cHbzbegYgS9vvVGuH8UA+o97X+ZshtboSqJJCdq7trBYzuD75JNwr7Ef606xkUjecPPhFnyB+afx1dVafielg==
   /language-subtag-registry/0.3.21:
     dev: true
     resolution:
@@ -3627,14 +3646,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
-  /swr/0.5.3_react@17.0.1:
-    dependencies:
-      react: 17.0.1
-    dev: false
-    peerDependencies:
-      react: ^16.11.0 || ^17.0.0
-    resolution:
-      integrity: sha512-RUE3RWn3jt9e4qLPat2A9vbHG/5N6konsc27xKjE65jFSiGv0P7HLD8IGvwAv6DRKktL7Od2UcayX0plKb2awg==
   /table/6.0.7:
     dependencies:
       ajv: 7.2.1
@@ -3905,8 +3916,17 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+  /zustand/3.3.3_react@17.0.1:
+    dependencies:
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: '>=16.8'
+    resolution:
+      integrity: sha512-KTN/O76rVc9muDoprsCDe/LQjbuq+GHYt5JdYahuXaGZ+8Gyk44SepzTFeQTF5J+b8+/Q+o90BaSEQ3WImKPog==
 specifiers:
   '@ant-design/icons': ^4.5.0
+  '@types/katex': ^0.11.0
   '@types/node': ^14.14.35
   '@types/react': ^17.0.3
   '@typescript-eslint/eslint-plugin': ^4.18.0
@@ -3920,9 +3940,10 @@ specifiers:
   eslint-plugin-react: ^7.22.0
   eslint-plugin-react-hooks: ^4.2.0
   jotai: ^0.15.3
+  katex: ^0.13.0
   next: ^10.0.9
   react: 17.0.1
   react-dom: 17.0.1
   recoil: ^0.1.3
-  swr: ^0.5.3
   typescript: ^4.2.3
+  zustand: ^3.3.3

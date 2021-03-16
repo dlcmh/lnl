@@ -55,6 +55,7 @@ module.exports = {
 
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'max-len': 'off',
+    'no-console': 'off',
     'react/destructuring-assignment': 'off',
     'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',

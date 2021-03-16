@@ -47,6 +47,13 @@ export default function Home() {
               <p>LnL January 22nd 2021 - State Management</p>
             </a>
           </Link>
+
+          <Link href="/katex">
+            <a className={styles.card}>
+              <h3>Katex &rarr;</h3>
+              <p>LnL March 19th 2021</p>
+            </a>
+          </Link>
         </div>
       </main>
 

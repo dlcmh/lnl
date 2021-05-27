@@ -2,6 +2,18 @@ import fetch from 'node-fetch';
 import { HnItem } from 'containers/Hn/HnItem';
 import { GetServerSideProps } from 'next';
 
+type HnItemResponse = {
+  by: string;
+  descendants: number;
+  id: number;
+  kids: number[];
+  score: number;
+  time: number;
+  title: string;
+  type: 'story';
+  url: string;
+};
+
 // eg item 27295906
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // // Fetch data from external API
@@ -18,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const response = await fetch(
     `https://hacker-news.firebaseio.com/v0/item/${id}.json`,
   );
-  const json = await response.json();
+  const json: HnItemResponse = await response.json();
   console.log({ json });
 
   return { props: {} };

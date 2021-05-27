@@ -18,6 +18,7 @@ specifiers:
   jotai: ^0.16.7
   katex: ^0.13.11
   next: ^10.2.3
+  node-fetch: ^2.6.1
   react: 17.0.2
   react-dom: 17.0.2
   recoil: ^0.3.1
@@ -31,6 +32,7 @@ dependencies:
   jotai: 0.16.7_react@17.0.2
   katex: 0.13.11
   next: 10.2.3_5b581230c30d9ba67c163ed64904f102
+  node-fetch: 2.6.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   recoil: 0.3.1_react-dom@17.0.2+react@17.0.2

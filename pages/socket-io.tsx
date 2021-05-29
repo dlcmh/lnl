@@ -5,6 +5,10 @@ import io, { Socket } from 'socket.io-client';
 export default function socketIo() {
   const [state, setState] = useState([]);
 
+  function pushToState(value: string) {
+    setState((prev) => [...prev, value]);
+  }
+
   useEffect(() => {
     let socket: Socket;
 
@@ -12,26 +16,23 @@ export default function socketIo() {
       socket = io();
 
       socket.on('connect', () => {
-        console.log(`dlc setState([...state, 'connect']);`);
+        pushToState('connect');
 
-        setState([...state, 'connect']);
         socket.emit('hello');
       });
 
       socket.on('a user connected', () => {
-        console.log(`dlc setState([...state, 'a user connected']);`);
-
-        setState([...state, 'a user connected']);
+        pushToState('a user connected');
       });
 
       socket.on('hello', (data) => {
-        console.log(`dlc hello setState([...state, data]);`, data);
-
-        setState([...state, data]);
+        pushToState(data);
       });
 
       socket.on('disconnect', () => {
         console.log('disconnect');
+
+        pushToState('disconnect');
       });
     });
 
@@ -46,9 +47,8 @@ export default function socketIo() {
 
   return (
     <PageWrapper title="Socket.io Demo">
-      {console.log('dlc state', state)}
-      {state.map((str) => {
-        return <li key={new Date().getTime()}>{str}</li>;
+      {state.map((str, id) => {
+        return <li key={id}>{str}</li>;
       })}
     </PageWrapper>
   );

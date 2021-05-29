@@ -29,6 +29,10 @@ export default function socketIo() {
         pushToState(data);
       });
 
+      socket.on('pg', (data) => {
+        pushToState(data);
+      });
+
       socket.on('disconnect', () => {
         console.log('disconnect');
 

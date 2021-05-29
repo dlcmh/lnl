@@ -1,0 +1,13 @@
+// this config is meant for running TS files as scripts with ts-node, eg in package.json:
+// "db:reset": "ts-node --project db/tsconfig.json --transpile-only db/reset/reset.ts"
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
+  }
+}

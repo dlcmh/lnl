@@ -2,4 +2,4 @@
 
 \connect lnl
 
-select pg_notify('channel_test', 'test_message');
+select pg_notify('HelloChannel', '{"message": "hello"}');

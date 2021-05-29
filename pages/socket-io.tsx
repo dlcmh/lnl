@@ -29,7 +29,7 @@ export default function socketIo() {
         pushToState(data);
       });
 
-      socket.on('pg', (data) => {
+      socket.on('pg_notify', (data) => {
         pushToState(data);
       });
 

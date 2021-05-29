@@ -36,9 +36,9 @@ pubSub.on('listen', (channel) => console.info(`Listening to ${channel}...`));
 pubSub.on('connect', async () => {
   console.info('Database connected!');
   await pubSub.listen(CHANNEL);
-  timer = setInterval(async () => {
-    await pubSub.notify(CHANNEL, { hello: { from: process.pid } });
-  }, NOTIFY_DELAY);
+  // timer = setInterval(async () => {
+  //   await pubSub.notify(CHANNEL, { hello: { from: process.pid } });
+  // }, NOTIFY_DELAY);
 });
 pubSub.on('notify', (channel) => console.log(`${channel} notified`));
 pubSub.on('end', () => console.warn('Connection closed!'));

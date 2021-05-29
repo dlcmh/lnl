@@ -12,14 +12,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to
-          {' '}
-          <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing
-          {' '}
+          Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -54,6 +51,15 @@ export default function Home() {
               <p>LnL March 19th 2021</p>
             </a>
           </Link>
+
+          <Link href="/socket-io">
+            <a className={styles.card}>
+              <h3>Socket.io Demo &rarr;</h3>
+              <p>
+                with PostgreSQL&apos;s <code>pg_notify</code>
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
@@ -63,8 +69,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by
-          {' '}
+          Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>

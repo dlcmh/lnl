@@ -1,5 +1,7 @@
 # Suria Labs fun stuff
 
+2021-12-10 - [XState, Ably, SvelteKit](https://github.com/dlcmh/lnl/wiki/xstate-ably-sveltekit)
+
 2021-07-23 - [Nextra](https://github.com/dlcmh/lnl/wiki/Nextra-on-Vercel)
 
 2021-03-19 - [KaTeX](https://github.com/dlcmh/lnl/tree/main/docs/katex)

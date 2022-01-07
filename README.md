@@ -1,6 +1,6 @@
 # Suria Labs fun stuff
 
-2021-12-10 - [XState, Ably, SvelteKit](https://github.com/dlcmh/lnl/wiki/xstate-ably-sveltekit)
+2022-01-07 - [XState, Ably, Azure Cosmos DB, CSS Modules](https://github.com/dlcmh/typo-lnl)
 
 2021-07-23 - [Nextra](https://github.com/dlcmh/lnl/wiki/Nextra-on-Vercel)
 
